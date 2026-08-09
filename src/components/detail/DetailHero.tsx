@@ -14,9 +14,11 @@ export function DetailHero({ tiktok, city }: { tiktok: TikTok; city: City | unde
         src={tiktok.coverImage}
         alt=""
         fallbackText={tiktok.title}
-        /* Capped on mobile: a full-height 4:5 hero pushes the script more than
-           a screen down, and the script is why you opened this on your phone. */
-        className="-mx-5 aspect-4/5 max-h-[46vh] md:mx-auto md:max-h-none md:w-[min(100%,420px)] md:rounded-card md:border md:border-hairline"
+        /* Mobile is height-driven, not ratio-driven: 125vw is the 4:5 height at
+           full bleed, capped at 46vh so the script isn't a screen and a half
+           down. Capping an aspect-ratio box instead would shrink its *width*
+           too, pulling the image off the right edge. */
+        className="-mx-5 h-[min(125vw,46vh)] md:mx-auto md:aspect-4/5 md:h-auto md:w-[min(100%,420px)] md:rounded-card md:border md:border-hairline"
         eager
         sizes="(max-width: 767px) 100vw, 420px"
       />

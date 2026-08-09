@@ -160,6 +160,7 @@
       "status": "Idea",
       "priority": "Must Film",
       "category": "Urban",
+      "coverImage": "/covers/shenzhen-cyberpunk-view.jpg",
       "location": {
         "name": "One Avenue 卓悦中心, Futian CBD",
         "amapUrl": "https://uri.amap.com/search?keyword=%E5%8D%93%E6%82%A6%E4%B8%AD%E5%BF%83"

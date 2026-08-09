@@ -29,8 +29,13 @@ A user who says
 gave you five fields. Research nothing except what's still blank, and do not
 touch those five.
 
-If they supply something that looks wrong, use it anyway and say so afterwards.
-It's their board.
+If they supply a *judgement* that looks wrong — an odd category, a title you'd
+have phrased better — use it anyway and say so afterwards. It's their board.
+
+The exception is a **misspelled place name**, which isn't a judgement, it's a
+broken map link. "Ganga North Station" is Gangxia North Station 岗厦北站.
+Research the correct name, use it, and say plainly what you changed and why.
+Getting someone to the wrong street is not respecting their input.
 
 ## Second rule: never invent
 
@@ -106,7 +111,7 @@ Keep the original in `photos/` if it's the user's own file. Set
 | Field | Default | Why |
 |---|---|---|
 | `status` | `Idea` | It's a new idea until they say otherwise. |
-| `priority` | **ask** | Not researchable and not guessable — it's the whole point of the Wall. One short question is fine. |
+| `priority` | infer if their framing implies it, otherwise **ask** | Not researchable. But "the most famous X", "I have to film this", or a message full of exact directions and a reel is someone who intends to shoot it — take `Must Film` and put the inference in the **first line** of your report so it's a one-word fix. Ask only when there's genuinely no signal. Never set it silently. |
 | `category` | infer from the subject | Use an existing one from the data if it fits; see the preferred list in `docs/LLM_INSTRUCTIONS.md`. |
 | `id` | kebab-case of the title | Must be unique — check the file. Permanent once written. |
 

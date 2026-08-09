@@ -152,6 +152,25 @@
         }
       ],
       "script": "## What I found\n\nMeituan runs the network. You order in the Meituan app, a yellow-and-black drone descends onto a kiosk about the size of a vending machine, the top opens, the box drops in, and you scan a code to unlock it.\n\n**Best spot to film — Shenzhen Central Park 深圳中心公园 (Futian).** Largest SkyPort installation, landings are visible, staff on site.\n\n**Alternative — Shenzhen Bay Park 深圳湾公园 (Nanshan),** Zone A at North Bay Harbor, one of the main entrances. That route flies from Coastal City mall about 2km away.\n\nOther confirmed parks: Lianhua Hill (Futian), Shenzhen Bay Coastal Ecological Park (Nanshan), North Railway Station Central Park (Longhua), Longcheng Park (Longgang), Cuihu Cultural & Sports Park (Luohu).\n\n## Practical\n\n- Roughly 10:00–21:00\n- No drone surcharge — standard Meituan delivery fee (¥3–9) plus the food\n- Grounded in heavy rain, strong wind or typhoon\n- Kiosks are fenced. Stay behind the line, don't stand under the landing pad\n- Meituan app is Chinese-only; pay through Alipay or WeChat Pay with an international card\n\n## Open questions\n\n- Which kiosk actually gets the most landings at lunchtime\n- Whether staff mind a tripod, and how long you can loiter\n- Whether the landing is long enough to carry a shot on its own, or whether the video is really order → wait → reveal"
+    },
+    {
+      "id": "shenzhen-cyberpunk-view",
+      "title": "Shenzhen's Most Famous Cyberpunk View",
+      "cityId": "shenzhen",
+      "status": "Idea",
+      "priority": "Must Film",
+      "category": "Urban",
+      "location": {
+        "name": "One Avenue 卓悦中心, Futian CBD",
+        "amapUrl": "https://uri.amap.com/search?keyword=%E5%8D%93%E6%82%A6%E4%B8%AD%E5%BF%83"
+      },
+      "references": [
+        {
+          "title": "Cyberpunk view from Gangxia North Exit 4",
+          "url": "https://www.instagram.com/reels/DWbQrrjAWJH/"
+        }
+      ],
+      "script": "## Getting there\n\nOut of **Gangxia North Station 岗厦北站, Exit 4**, then the street-level canyon toward One Avenue 卓悦中心, with Civic Center and the Futian CBD towers around you.\n\nThe junction in the photo reads 金田路 / 深南大道 — One Avenue's official address is the Shennan / Jintian Road interchange, so that lines up.\n\n## What I found\n\n**Gangxia North is worth filming on the way through.** The station itself is the \"Eye of Shenzhen\": a spiral atrium with circular glass windows and a glass tunnel, and there's a marked spot on the platform telling you where to stand for the shot. Cyberpunk underground, cyberpunk at street level — two looks, one stop.\n\n**Careful with the station name.** One Avenue's own directions send you from *Gangxia* Exit B (~5 min), which is a different station from *Gangxia North*. Worth knowing if Exit 4 doesn't put you where you expect.\n\n## Open questions\n\n- Blue hour or full dark — the reel and the photo are both night\n- Whether the atrium is its own video or the cold open for this one\n- How busy the pavement is at the framing you want, and whether a tripod is realistic there"
     }
   ]
 }

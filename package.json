@@ -6,11 +6,14 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "postbuild": "node scripts/postbuild.mjs",
     "preview": "vite preview",
     "typecheck": "tsc -b --noEmit",
     "validate": "tsx scripts/validate-data.ts",
     "schema": "tsx scripts/generate-schema.ts",
-    "stress": "tsx scripts/stress-data.ts"
+    "stress": "tsx scripts/stress-data.ts",
+    "deploy": "npm run validate && npm run build && gh-pages -d dist -b gh-pages -m \"Deploy $(date -u +%Y-%m-%dT%H:%MZ)\"",
+    "ship": "npm run deploy"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.23",
@@ -35,6 +38,7 @@
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.4",
     "@vitejs/plugin-react": "^6.0.5",
+    "gh-pages": "^6.3.0",
     "tailwindcss": "^4.3.3",
     "tsx": "^4.23.11",
     "typescript": "^7.0.2",

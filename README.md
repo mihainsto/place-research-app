@@ -112,10 +112,22 @@ react-force-graph-2d · Radix (popover, dialog) · cmdk · react-markdown
 
 ## Deploying
 
-Static SPA — `dist/` on any host. `vercel.json` and `public/_redirects` are
-included so `/t/:id` survives a hard refresh on Vercel and Netlify. Anywhere
-without rewrite support, switch `BrowserRouter` to `HashRouter` in
-`src/App.tsx`.
+**Live:** https://mihainsto.github.io/place-research-app/ — public.
+
+```bash
+npm run deploy
+```
+
+Runs `validate` → `build` → publishes `dist/` to the `gh-pages` branch.
+Validation first, so a broken dataset can't reach the live site. The three
+skills above do this for you after every change.
+
+Full ship sequence and the GitHub Pages gotchas (subpath base, the `404.html`
+fallback, asset paths that fail *silently*) are in [`docs/DEPLOY.md`](docs/DEPLOY.md).
+
+It also builds for any other static host — `vercel.json` and `public/_redirects`
+are included for Vercel and Netlify, which have real rewrite rules and don't
+need the 404 trick.
 
 ## Covers
 

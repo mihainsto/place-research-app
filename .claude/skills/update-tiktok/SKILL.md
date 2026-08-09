@@ -63,4 +63,19 @@ follow the research and never-invent rules in `/add-tiktok`.
 npm run validate
 ```
 
-Then say what changed, in one line per field. Nothing else.
+Green or fix it. Then ship — every change to the board goes live:
+
+```bash
+git add -A && git commit -m "<what changed and why>"
+git push
+npm run deploy
+```
+
+`npm run deploy` re-runs validate and build before publishing, so a broken
+dataset cannot reach the live site. **If validate is red, stop** — commit
+nothing, deploy nothing, and say what's wrong.
+
+Live at https://mihainsto.github.io/place-research-app/ (public; Pages takes a
+minute or two). Troubleshooting is in `docs/DEPLOY.md`.
+
+Then say what changed, one line per field, plus the commit hash. Nothing else.

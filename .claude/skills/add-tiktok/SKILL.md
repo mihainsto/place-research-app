@@ -139,7 +139,7 @@ verbatim above your notes — including any half-finished sentence.
 
 If `cityId` isn't already in `cities[]`, add `{ id, name, region }`.
 
-### 8. Write, validate, report
+### 8. Write and validate
 
 Append the object to `tiktoks`. Don't reformat or reorder anything else — the
 file is in git and the diff should be just your entry.
@@ -148,13 +148,36 @@ file is in git and the diff should be just your entry.
 npm run validate
 ```
 
-Green or fix it. Then report in three short lists:
+Green or fix it.
+
+### 9. Ship it
+
+Every change to the board goes live. Run these in order:
+
+```bash
+git add -A && git commit -m "<what changed and why>"
+git push
+npm run deploy
+```
+
+`npm run deploy` re-runs validate and build before publishing, so a broken
+dataset cannot reach the live site. **If validate is red, stop** — commit
+nothing, deploy nothing, and say what's wrong.
+
+Live at https://mihainsto.github.io/place-research-app/ — public, and Pages
+takes a minute or two to pick up the change. See `docs/DEPLOY.md` if something
+looks wrong, especially monogram tiles where photos should be.
+
+### 10. Report
+
+Three short lists:
 
 - **Supplied by you** — the fields taken verbatim.
 - **Researched** — each with the source you got it from.
 - **Couldn't confirm** — left blank, and where to look.
 
-Keep it to a few lines. Don't restate the JSON.
+Then the commit hash and the live URL. Keep it to a few lines. Don't restate
+the JSON.
 
 ## Worked example
 

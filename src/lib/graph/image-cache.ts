@@ -10,6 +10,8 @@
  * tainted canvas costs us nothing and CORS can't break the map.
  */
 
+import { assetUrl } from '@/lib/asset'
+
 type State = 'queued' | 'loading' | 'ready' | 'error'
 
 interface Entry {
@@ -50,7 +52,10 @@ function pump() {
  * Returns the decoded image, or null while it's still loading / if it failed.
  * Callers paint a placeholder when they get null — never a gap.
  */
-export function getCoverImage(src: string | null | undefined): HTMLImageElement | null {
+export function getCoverImage(rawSrc: string | null | undefined): HTMLImageElement | null {
+  // Stored paths are root-relative; resolve against the deployment base or
+  // every cover 404s when served from a subpath.
+  const src = assetUrl(rawSrc)
   if (!src) return null
 
   const existing = entries.get(src)

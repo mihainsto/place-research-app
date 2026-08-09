@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { assetUrl } from '@/lib/asset'
 import { cn } from '@/lib/cn'
 
 interface Props {
@@ -31,7 +32,8 @@ export function CoverImage({
 }: Props) {
   const [state, setState] = useState<'loading' | 'loaded' | 'error'>(src ? 'loading' : 'error')
 
-  const showImage = src && state !== 'error'
+  const resolved = assetUrl(src)
+  const showImage = resolved && state !== 'error'
   const monogram = (fallbackText ?? alt).trim().charAt(0).toUpperCase() || '·'
 
   return (
@@ -56,7 +58,7 @@ export function CoverImage({
 
       {showImage ? (
         <img
-          src={src}
+          src={resolved}
           alt={alt}
           sizes={sizes}
           loading={eager ? 'eager' : 'lazy'}

@@ -69,9 +69,32 @@ Every referenced file must exist. A path pointing at nothing renders as a
 monogram tile, which looks intentional — so a broken link will not announce
 itself. Check it.
 
-### 5. Report
+### 5. Ship it
 
-Which photo went to which entry, the sizes, and anything left unmatched.
+Covers are part of the board, so they go live like everything else:
+
+```bash
+git add -A && git commit -m "<which cover, for which entry>"
+git push
+npm run deploy
+```
+
+Commit the original in `photos/` alongside the web copy — it's the archive, and
+it's what you'd re-crop from.
+
+`npm run deploy` re-runs validate and build first. **If validate is red, stop.**
+
+Live at https://mihainsto.github.io/place-research-app/ (public; Pages takes a
+minute or two).
+
+If the live site shows a monogram tile where your photo should be, the cover
+404'd — that failure is silent by design, because a missing cover is a designed
+state. See `docs/DEPLOY.md`.
+
+### 6. Report
+
+Which photo went to which entry, the sizes, anything left unmatched, and the
+commit hash.
 
 ## Sourcing a cover from the web
 

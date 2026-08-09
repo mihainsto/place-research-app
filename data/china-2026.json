@@ -7,7 +7,8 @@
 
   "cities": [
     { "id": "chongqing", "name": "Chongqing", "region": "Southwest" },
-    { "id": "shenzhen", "name": "Shenzhen", "region": "South" }
+    { "id": "shenzhen", "name": "Shenzhen", "region": "South" },
+    { "id": "changsha", "name": "Changsha", "region": "Central" }
   ],
 
   "tiktoks": [
@@ -192,6 +193,26 @@
         }
       ],
       "script": "## Getting there\n\n**The viewing platform is outside the turnstiles.** Free, at street level, no metro ticket — the obvious move of going into the station to find the train is the wrong one. Come out at **Exit 2** and follow the signs to 观景台. Exit 1 works too but loops the long way round.\n\n## Angles\n\n- **The platform opposite** — the classic frame. Built at a deliberate 33° to the building for exactly this shot.\n- **Inside the station and the corridors** — then ride one stop for the in-motion version.\n- **Sixth-floor reading room** — floor-to-ceiling windows straight onto the track, air conditioned. You have to buy something; water counts.\n- **Lansheng Pavilion**, 370m away, 10–15 min of climbing — gets the train, the tower and the Jialing River in one frame.\n\n## Timing\n\n- Trains every 3–8 min, ~6:30–23:00. Tightest at 07:30–09:30 and 17:00–19:00.\n- Light and crowds don't peak together: the crush is 12:00–15:00, the good light is 14:00–17:00. **From about 15:00** gets you both.\n- Emptiest is 07:00–09:00 — by 08:00 on a weekday, 08:30 at the weekend.\n- Budget 20–30 min for 3–4 passes.\n\n## Open questions\n\n- Which of these the reel actually uses, and whether it has a spot I haven't got here\n- Whether the Lansheng Pavilion climb is worth it for a vertical crop, or whether it only reads wide\n- Whether a tripod is tolerated on the platform when it's busy"
+    },
+    {
+      "id": "wenheyou-cable-car",
+      "title": "The Cable Car Inside a Mall",
+      "cityId": "changsha",
+      "status": "Idea",
+      "priority": "Must Film",
+      "category": "Weird China",
+      "coverImage": "/covers/wenheyou-cable-car.jpg",
+      "location": {
+        "name": "Super Wenheyou 超级文和友, 36 Xiangjiang Middle Road, Tianxin District",
+        "amapUrl": "https://uri.amap.com/search?keyword=%E8%B6%85%E7%BA%A7%E6%96%87%E5%92%8C%E5%8F%8B"
+      },
+      "references": [
+        {
+          "title": "Super Wenheyou — floors, hours and the cable car",
+          "url": "https://www.trip.com/moments/poi-wenheyou-changsha-16976158/"
+        }
+      ],
+      "script": "## Getting there\n\n**Super Wenheyou 超级文和友** — floors 1–6 of Hisense Plaza 海信广场, at the address you gave. Metro: Xiangjiang Middle Road Station, Line 2 Exit 3, 3–5 min walk. Huangxing Square on Line 1 also works.\n\n## The cable car\n\n**Fifth floor.** The sign in the photo reads 文和友缆车售票处 ← 五楼 — \"Wenheyou cable car ticket office, 5th floor\". Around ¥20 a person to ride it.\n\n## Practical\n\n- Open 11:00–02:00.\n- **Free to walk in and film.** The queue everyone warns about is for *food*, not entry — 2h+ on evenings and weekends, run through an online number system. You can ignore all of it if you're only shooting.\n- Quietest 14:00–17:00, or before 17:00 on a weekday.\n- The cable car is one prop inside a much bigger set: the whole venue is a recreated 1980s Changsha street stacked six floors high. Worth budgeting time for the building itself.\n\n## Open questions\n\n- Whether you can film from inside the car while it's moving, or only from the walkways\n- Whether the ¥20 ride uses the same number-taking system as the restaurants\n- Whether the cable car runs the full 11:00–02:00 or shorter hours than the venue"
     }
   ]
 }

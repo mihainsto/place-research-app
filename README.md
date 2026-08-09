@@ -30,7 +30,24 @@ npm run dev
 
 You don't fill in a form. You tell an LLM, it writes JSON, you commit.
 
-1. Give your LLM [`docs/LLM_INSTRUCTIONS.md`](docs/LLM_INSTRUCTIONS.md).
+### In Claude Code
+
+Three skills live in `.claude/skills/` and trigger on plain requests:
+
+| Skill | Say something like |
+|---|---|
+| **add-tiktok** | *"add the shenzhen food drone delivery"* — researches the venue name, sources and a cover, then writes the entry |
+| **update-tiktok** | *"I filmed the diarrhea clinic"*, *"bump the gas station to must film"* |
+| **add-cover** | *"I dumped new photos in the photos folder"* |
+
+`add-tiktok` follows one rule above all others: **anything you supply is taken
+verbatim and never researched over.** Give it a full entry and it does no
+searching; give it four words and it fills in the rest. It asks before
+downloading any image, and leaves a field blank rather than guessing.
+
+### By hand, or with any other LLM
+
+1. Give it [`docs/LLM_INSTRUCTIONS.md`](docs/LLM_INSTRUCTIONS.md).
 2. Ask it to add or update an entry in `public/data/china-2026.json`.
 3. `npm run validate`
 4. Commit. That's the deploy.

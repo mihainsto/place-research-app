@@ -136,6 +136,7 @@
       "status": "Idea",
       "priority": "Good",
       "category": "Urban",
+      "coverImage": "/covers/shenzhen-drone-delivery.jpg",
       "location": {
         "name": "Shenzhen Central Park 深圳中心公园, Futian District",
         "amapUrl": "https://uri.amap.com/search?keyword=%E6%B7%B1%E5%9C%B3%E4%B8%AD%E5%BF%83%E5%85%AC%E5%9B%AD"

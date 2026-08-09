@@ -257,6 +257,46 @@
         }
       ],
       "script": "## What it is\n\n**Orbit One 奥彼文星球食研所** — space-themed, and the gimmick is the delivery. Dishes ride UFO-shaped carriers along a **magnetic levitation track mounted on the ceiling**, stop above your table and descend onto it. Holographic galaxy tables, planet lamps, the lot.\n\n## Where\n\n- LG floor, **iN City Plaza**, 1088 Shennan Middle Road, Futian. Shop 01–02, opposite Nayuki 奈雪的茶.\n- Metro Line 6, **Science Museum Station 科学馆站**. Sources disagree on the exit — one says Exit E (~260m), another Exit F (~490m). Either way you're in the right mall.\n- Mon–Thu and Sun 11:30–21:00. Fri–Sat 11:30–21:30.\n- Around ¥99 a head.\n\n## Open questions\n\n- Walk in or book? Described as \"always packed\", but nothing I found said which\n- Whether they mind you filming the ceiling track over other diners' tables\n- Whether the UFO descent is quick enough to want a high frame rate\n- Whether the food is worth eating or whether this is purely a set piece"
+    },
+    {
+      "id": "dji-sky-city",
+      "title": "DJI Sky City",
+      "cityId": "shenzhen",
+      "status": "Idea",
+      "priority": "Must Film",
+      "category": "Architecture",
+      "coverImage": "/covers/dji-sky-city.jpg",
+      "location": {
+        "name": "DJI Sky City 大疆天空之城, 55 Xianyuan Road, Nanshan District",
+        "amapUrl": "https://uri.amap.com/search?keyword=%E5%A4%A7%E7%96%86%E5%A4%A9%E7%A9%BA%E4%B9%8B%E5%9F%8E"
+      },
+      "references": [
+        {
+          "title": "Reel — DJI Sky City and the Civic Center",
+          "url": "https://www.instagram.com/reels/DXCCaKciIAh/"
+        }
+      ],
+      "script": "## What it is\n\nDJI's global headquarters, in Liuxiandong, Xili, Nanshan. **Foster + Partners**, finished December 2022. Two towers — roughly **213m and 195m** — joined by an **open-air suspension bridge 100m up**. The floors are hung from steel cores, which is why the stacked volumes appear to float clear of each other; that's the thing the night lighting picks out.\n\n## Access — read this before you plan a day around it\n\nIt's a **working corporate campus** for ~8,000 staff. I found no confirmed visitor centre, observation deck or public interior. Treat this as an **exterior shoot** until proven otherwise.\n\nThe DJI **flagship store is somewhere else entirely** — OCT Harbour, Baishi Road, Nanshan (10:00–22:00, later Fri/Sat). That's the one that's open to the public, if you want hands-on product as a second scene.\n\n## Open questions\n\n- Whether you can get onto the plaza at the base or only shoot from the street\n- Whether security move you on for filming, especially with a tripod or a drone\n- Where the angle in the reel is actually shot from\n- Whether the facade lighting runs nightly or only at set times"
+    },
+    {
+      "id": "civic-center-light-show",
+      "title": "The Civic Center Light Show",
+      "cityId": "shenzhen",
+      "status": "Idea",
+      "priority": "Good",
+      "category": "Urban",
+      "coverImage": "/covers/civic-center-light-show.jpg",
+      "location": {
+        "name": "Civic Center Square 市民广场, Futian District",
+        "amapUrl": "https://uri.amap.com/search?keyword=%E6%B7%B1%E5%9C%B3%E5%B8%82%E6%B0%91%E4%B8%AD%E5%BF%83"
+      },
+      "references": [
+        {
+          "title": "Reel — DJI Sky City and the Civic Center",
+          "url": "https://www.instagram.com/reels/DXCCaKciIAh/"
+        }
+      ],
+      "script": "## The catch: the square needs a booking\n\nWatching from **Civic Center Square itself requires a free reservation**, through the 福田中心区夜景灯光预约导引服务 WeChat mini-program. Turning up without one is the way this goes wrong.\n\n**No booking is needed from nearby vantage points** — Lianhua Hill 莲花山 is the usual one, about a 10-minute climb, and it's the better frame anyway: the whole CBD skyline with Ping An behind it rather than the towers looming over you.\n\nSo: book if you want the square and the LED floor tiles in shot. Skip the booking and climb the hill if you want the skyline.\n\n## When\n\n- **Fridays and Saturdays**, plus the day before and during Chinese public holidays — New Year, Spring Festival, Labour Day, Dragon Boat, Mid-Autumn, National Day.\n- **Nov–Mar:** 19:00, 20:00, 21:00. **Apr–Oct:** 19:30, 20:30, 21:30.\n- Each show runs **15 minutes**.\n- Metro Line 2 or 4 to Civic Center Station, Exit B or F.\n\n## Shooting notes\n\n- Record video, not stills — the animation is the point.\n- Tripod worth having; it's a long, dark, wide subject.\n- Best reflections come right after rain, off the square.\n- For the square, get there well before the show to hold a spot.\n\n## Open questions\n\n- Whether the reservation is bookable by a foreign passport / non-Chinese WeChat, or needs a local\n- How far ahead the slots go and whether they sell out\n- Which of the three nightly shows is least crowded"
     }
   ]
 }

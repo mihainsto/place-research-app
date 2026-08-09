@@ -237,6 +237,26 @@
         }
       ],
       "script": "## Booking it is the hard part\n\nEvery robotaxi app needs a **+86 number** for SMS verification — get a passport-registered Chinese SIM at the airport.\n\nThen the catch: **Apollo Go 萝卜快跑 — the operator in the photo, it's printed on the steering wheel cover — typically wants a Chinese ID at signup**, and as of 2026 still mostly blocks foreign IDs. Solo registration may simply fail.\n\nRoutes, most to least likely to work:\n\n1. **Pony.ai 小马智行** — holds Shenzhen's first citywide fully-driverless commercial permit, 1,000+ L4 cars. PonyPilot+ app (小马智行), its WeChat mini-program, or through Gaode Maps.\n2. **Tencent's Futian pilot** — small coverage, but reportedly the one with explicit foreign-traveller access. WeChat mini-program.\n3. **Apollo Go** — Baidu Maps app, or the 萝卜快跑 mini-program. Worth a try; don't build the day around it.\n4. Failing all of it: a local books, you ride.\n\n## Where\n\nNot a venue, a service zone.\n\n- **Pony.ai** — Qianhai 前海 and parts of Nanshan / Bao'an. 08:30–22:30.\n- **Apollo Go** — Pingshan, Nanshan, parts of Bao'an. 07:00–23:00.\n- Three passengers max.\n\n## Open questions\n\n- Whether a passport alone clears Pony.ai signup in Shenzhen, or whether that wants a Chinese ID too\n- Door-to-door or fixed pickup points — no source I found committed either way\n- What a ride costs and how long you wait\n- Whether the empty driver's seat reads on camera without a wide lens, or whether the shot is really the wheel turning by itself"
+    },
+    {
+      "id": "orbit-one",
+      "title": "The Restaurant Where UFOs Bring the Food",
+      "cityId": "shenzhen",
+      "status": "Idea",
+      "priority": "Maybe",
+      "category": "Food",
+      "coverImage": "/covers/orbit-one.jpg",
+      "location": {
+        "name": "Orbit One 奥彼文星球食研所, iN City Plaza, 1088 Shennan Middle Road, Futian",
+        "amapUrl": "https://uri.amap.com/search?keyword=%E5%A5%A5%E5%BD%BC%E6%96%87%E6%98%9F%E7%90%83%E9%A3%9F%E7%A0%94%E6%89%80"
+      },
+      "references": [
+        {
+          "title": "Orbit One — address, hours, prices and how the maglev delivery works",
+          "url": "https://hkexpatclub.com/orbit-one-shenzhen-ufo-restaurant-guide/"
+        }
+      ],
+      "script": "## What it is\n\n**Orbit One 奥彼文星球食研所** — space-themed, and the gimmick is the delivery. Dishes ride UFO-shaped carriers along a **magnetic levitation track mounted on the ceiling**, stop above your table and descend onto it. Holographic galaxy tables, planet lamps, the lot.\n\n## Where\n\n- LG floor, **iN City Plaza**, 1088 Shennan Middle Road, Futian. Shop 01–02, opposite Nayuki 奈雪的茶.\n- Metro Line 6, **Science Museum Station 科学馆站**. Sources disagree on the exit — one says Exit E (~260m), another Exit F (~490m). Either way you're in the right mall.\n- Mon–Thu and Sun 11:30–21:00. Fri–Sat 11:30–21:30.\n- Around ¥99 a head.\n\n## Open questions\n\n- Walk in or book? Described as \"always packed\", but nothing I found said which\n- Whether they mind you filming the ceiling track over other diners' tables\n- Whether the UFO descent is quick enough to want a high frame rate\n- Whether the food is worth eating or whether this is purely a set piece"
     }
   ]
 }

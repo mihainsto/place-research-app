@@ -1,0 +1,10 @@
+{
+  // Solution file. Type-checking happens in the two referenced projects.
+  // `paths` is repeated here because tsx (used by the `scripts/`) resolves
+  // aliases from the root tsconfig, not from the referenced projects.
+  "compilerOptions": {
+    "paths": { "@/*": ["./src/*"] }
+  },
+  "files": [],
+  "references": [{ "path": "./tsconfig.app.json" }, { "path": "./tsconfig.node.json" }]
+}

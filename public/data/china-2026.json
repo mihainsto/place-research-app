@@ -1,0 +1,130 @@
+{
+  "$schema": "../../schema/china-2026.schema.json",
+  "project": {
+    "name": "China 2026",
+    "updatedAt": "2026-08-09"
+  },
+
+  "cities": [{ "id": "chongqing", "name": "Chongqing", "region": "Southwest" }],
+
+  "tiktoks": [
+    {
+      "id": "yunjing-observation-deck",
+      "title": "Yunjing Observation Deck",
+      "cityId": "chongqing",
+      "status": "Idea",
+      "priority": "Must Film",
+      "category": "Skyscraper View",
+      "coverImage": "/covers/yunjing-observation-deck.jpg",
+      "location": {
+        "name": "Yunjing Observation Deck"
+      },
+      "references": [{ "title": "Ejay Trip", "url": "https://www.ejaytrip.com/" }]
+    },
+    {
+      "id": "eye-of-the-cloud-observatory",
+      "title": "Eye of the Cloud Observatory",
+      "cityId": "chongqing",
+      "status": "Idea",
+      "priority": "Must Film",
+      "category": "Skyscraper View",
+      "coverImage": "/covers/eye-of-the-cloud-observatory.jpg",
+      "location": {
+        "name": "Eye of the Cloud Observatory"
+      },
+      "references": [
+        {
+          "title": "Eye of the Cloud Observatory",
+          "url": "https://www.instagram.com/reels/DHrUxXESiIW/"
+        }
+      ]
+    },
+    {
+      "id": "suspended-gas-station",
+      "title": "Suspended Gas Station",
+      "cityId": "chongqing",
+      "status": "Idea",
+      "priority": "Must Film",
+      "category": "Weird China",
+      "coverImage": "/covers/suspended-gas-station.jpg",
+      "references": [
+        {
+          "title": "Suspended Gas Station",
+          "url": "https://www.instagram.com/reels/DYN7ugFBxmu/"
+        }
+      ]
+    },
+    {
+      "id": "diarrhea-clinic",
+      "title": "Diarrhea Clinic",
+      "cityId": "chongqing",
+      "status": "Idea",
+      "priority": "Must Film",
+      "category": "Weird China",
+      "coverImage": "/covers/diarrhea-clinic.jpg"
+    },
+    {
+      "id": "deyi-world",
+      "title": "DEYI World",
+      "cityId": "chongqing",
+      "status": "Idea",
+      "priority": "Good",
+      "category": "Skyscraper View",
+      "coverImage": "/covers/deyi-world.jpg",
+      "location": {
+        "name": "DEYI World"
+      },
+      "references": [{ "title": "Ejay Trip", "url": "https://www.ejaytrip.com/" }]
+    },
+    {
+      "id": "nanguo-lijing-parking-lot",
+      "title": "Building With Parking Lot (-7 Street Level)",
+      "cityId": "chongqing",
+      "status": "Idea",
+      "priority": "Good",
+      "category": "Weird China",
+      "coverImage": "/covers/nanguo-lijing-parking-lot.jpg",
+      "location": {
+        "name": "Nanguo Lijing B Ku Parking Lot",
+        "googleMapsUrl": "https://maps.app.goo.gl/2v18m7VAZrarV3vy8"
+      },
+      "references": [
+        {
+          "title": "Nanguo Lijing B Ku Parking Lot",
+          "url": "https://www.instagram.com/reels/DY4tn3EMq1x/"
+        }
+      ]
+    },
+    {
+      "id": "wadingding-cafe",
+      "title": "Wadingding Café",
+      "cityId": "chongqing",
+      "status": "Idea",
+      "priority": "Maybe",
+      "category": "Food",
+      "coverImage": "/covers/wadingding-cafe.jpg",
+      "location": {
+        "name": "S95 Super Dimension Center, 5F, 7 Luohan Temple Street, Yuzhong District"
+      },
+      "references": [
+        {
+          "title": "Wadingding Café",
+          "url": "https://www.instagram.com/reels/Da2DKr-ocsm/"
+        }
+      ],
+      "script": "Located on the 5th floor of the S95 Super Dimension Center at 7 Luohan Temple Street in the Yuzhong District, it offers a stunning, direct view overlooking the historic, nearly 1,000-year-old Luohan Temple framed against modern"
+    },
+    {
+      "id": "hongyancun-station",
+      "title": "Hongyancun Station",
+      "cityId": "chongqing",
+      "status": "Idea",
+      "priority": "Maybe",
+      "category": "Weird China",
+      "coverImage": "/covers/hongyancun-station.jpg",
+      "location": {
+        "name": "Hongyancun Station"
+      }
+    }
+  ]
+}

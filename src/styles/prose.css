@@ -1,0 +1,197 @@
+/* ============================================================================
+   SCRIPT TYPOGRAPHY
+   The single most important surface in the app. Read at arm's length, in the
+   dark, one-handed, standing at the filming location.
+
+   Rules:
+   · No card, no border, no background — text sits directly on the canvas.
+   · Nothing between the section heading and the first word.
+   · Nothing behind a tab, accordion or "read more".
+   ========================================================================== */
+
+.prose-script {
+  color: var(--color-script);
+  font-size: var(--script-size, 19px);
+  line-height: 1.75;
+  letter-spacing: 0.003em;
+  max-width: 68ch;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 640px) {
+  .prose-script {
+    font-size: var(--script-size, 18px);
+    line-height: 1.72;
+  }
+}
+
+.prose-script > * + * {
+  margin-top: 1.25em;
+}
+
+.prose-script p {
+  margin: 0;
+}
+
+/* Headings inside a script are structure markers, not titles — keep them
+   quiet so the prose stays the loudest thing on the page. */
+.prose-script h1,
+.prose-script h2,
+.prose-script h3,
+.prose-script h4 {
+  margin: 0;
+  color: var(--color-ink-3);
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.prose-script > h1,
+.prose-script > h2,
+.prose-script > h3,
+.prose-script > h4 {
+  margin-top: 2.25em;
+}
+
+.prose-script > :first-child {
+  margin-top: 0;
+}
+
+.prose-script strong,
+.prose-script b {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.prose-script em {
+  color: var(--color-ink);
+  font-style: italic;
+}
+
+.prose-script a {
+  color: var(--color-ink);
+  text-decoration: underline;
+  text-decoration-color: var(--color-accent-line);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  transition: text-decoration-color 150ms var(--ease-snappy);
+}
+
+.prose-script a:hover {
+  text-decoration-color: var(--color-accent);
+}
+
+.prose-script ul,
+.prose-script ol {
+  margin: 0;
+  padding-left: 1.35em;
+}
+
+.prose-script ul {
+  list-style: none;
+  padding-left: 1.1em;
+}
+
+.prose-script ul > li {
+  position: relative;
+}
+
+.prose-script ul > li::before {
+  content: '';
+  position: absolute;
+  left: -0.95em;
+  top: 0.72em;
+  width: 4px;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--color-ink-3);
+}
+
+.prose-script ol {
+  list-style: decimal;
+}
+
+.prose-script ol > li::marker {
+  color: var(--color-ink-3);
+  font-variant-numeric: tabular-nums;
+}
+
+.prose-script li + li {
+  margin-top: 0.6em;
+}
+
+.prose-script li > ul,
+.prose-script li > ol {
+  margin-top: 0.6em;
+}
+
+.prose-script blockquote {
+  margin: 0;
+  padding-left: 1.1em;
+  border-left: 2px solid var(--color-accent-line);
+  color: var(--color-ink-2);
+}
+
+.prose-script hr {
+  margin-block: 2.25em;
+  border: 0;
+  border-top: 1px solid var(--color-hairline);
+}
+
+.prose-script code {
+  font-family: var(--font-mono);
+  font-size: 0.86em;
+  padding: 0.12em 0.36em;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--color-ink);
+}
+
+.prose-script pre {
+  margin: 0;
+  padding: 16px 18px;
+  border-radius: var(--radius-card);
+  background: var(--color-surface);
+  border: 1px solid var(--color-hairline);
+  overflow-x: auto;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.prose-script pre code {
+  padding: 0;
+  background: none;
+  font-size: inherit;
+}
+
+/* GFM tables — rare in a script, but they shouldn't break the page. */
+.prose-script table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88em;
+  display: block;
+  overflow-x: auto;
+}
+
+.prose-script th,
+.prose-script td {
+  text-align: left;
+  padding: 8px 12px 8px 0;
+  border-bottom: 1px solid var(--color-hairline);
+}
+
+.prose-script th {
+  color: var(--color-ink-3);
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.prose-script img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-card);
+}

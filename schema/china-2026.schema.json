@@ -1,0 +1,194 @@
+{
+  "$id": "https://china-2026.local/schema/china-2026.schema.json",
+  "title": "China 2026 — TikTok command center",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "project": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "updatedAt": {
+          "type": "string"
+        }
+      }
+    },
+    "cities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+            "description": "kebab-case id, e.g. \"chongqing\"."
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Display name, e.g. \"Chongqing\"."
+          },
+          "region": {
+            "description": "Optional, e.g. \"Southwest\".",
+            "type": "string"
+          },
+          "coverImage": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "name"
+        ]
+      }
+    },
+    "tiktoks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+            "description": "Permanent kebab-case id. This is the URL. NEVER change it once assigned."
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "description": "The TikTok title, as it would be said out loud."
+          },
+          "cityId": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+            "description": "kebab-case id of a city in `cities`."
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "Idea",
+              "Script",
+              "Ready to Film",
+              "Filmed",
+              "Editing",
+              "Posted"
+            ],
+            "description": "Production status."
+          },
+          "priority": {
+            "type": "string",
+            "enum": [
+              "Must Film",
+              "Good",
+              "Maybe"
+            ],
+            "description": "How much this matters."
+          },
+          "category": {
+            "type": "string",
+            "minLength": 1,
+            "description": "A simple string, e.g. \"Weird China\", \"Food\", \"Urban\"."
+          },
+          "coverImage": {
+            "description": "Absolute URL, or a repo-relative path like \"/covers/foo.jpg\".",
+            "type": "string"
+          },
+          "location": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Where to physically stand, specific enough to navigate to."
+              },
+              "appleMapsUrl": {
+                "description": "Optional. Derived from name + city when omitted.",
+                "type": "string",
+                "format": "uri"
+              },
+              "googleMapsUrl": {
+                "description": "Optional. Derived from name + city when omitted.",
+                "type": "string",
+                "format": "uri"
+              },
+              "amapUrl": {
+                "description": "Optional 高德地图 link. Worth adding — Google Maps does not work in mainland China.",
+                "type": "string",
+                "format": "uri"
+              }
+            },
+            "required": [
+              "name"
+            ],
+            "description": "Where this gets filmed."
+          },
+          "references": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string",
+                  "minLength": 1,
+                  "description": "Human label, e.g. \"The reel that started this idea\"."
+                },
+                "url": {
+                  "type": "string",
+                  "format": "uri",
+                  "description": "Absolute http(s) URL."
+                },
+                "type": {
+                  "description": "Optional. Derived from the URL when omitted.",
+                  "type": "string",
+                  "enum": [
+                    "instagram",
+                    "tiktok",
+                    "youtube",
+                    "xiaohongshu",
+                    "article",
+                    "video",
+                    "website"
+                  ]
+                }
+              },
+              "required": [
+                "title",
+                "url"
+              ],
+              "description": "A source: a reel, a video, an article, a website."
+            }
+          },
+          "script": {
+            "description": "The single content field. Markdown. Hook, beats, shot notes, voiceover, caption ideas — everything goes here. There are no other content fields.",
+            "type": "string"
+          },
+          "createdAt": {
+            "description": "ISO date, e.g. \"2026-08-09\".",
+            "type": "string"
+          },
+          "updatedAt": {
+            "description": "ISO date.",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "cityId",
+          "status",
+          "priority",
+          "category"
+        ]
+      }
+    }
+  },
+  "required": [
+    "cities",
+    "tiktoks"
+  ],
+  "description": "China 2026 — TikTok command center dataset."
+}

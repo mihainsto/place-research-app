@@ -58,6 +58,14 @@ export const RawCitySchema = z.object({
   coverImage: z.string().optional(),
 })
 
+export const RawTimelineDaySchema = z.object({
+  date: z.string(),
+  cityId: z.string().optional(),
+  /** Same tolerated alias as on a TikTok. */
+  city: z.string().optional(),
+  note: z.string().optional(),
+})
+
 export const RawDatasetSchema = z.object({
   $schema: z.string().optional(),
   project: z
@@ -68,6 +76,8 @@ export const RawDatasetSchema = z.object({
     .optional(),
   cities: z.array(z.unknown()).optional(),
   tiktoks: z.array(z.unknown()),
+  /** One entry per day of the trip. Optional — no timeline is a valid state. */
+  timeline: z.array(z.unknown()).optional(),
 })
 
 export type RawTikTok = z.infer<typeof RawTikTokSchema>
@@ -95,6 +105,13 @@ export const KNOWN_LOCATION_KEYS: ReadonlySet<string> = new Set([
   'appleMapsUrl',
   'googleMapsUrl',
   'amapUrl',
+])
+
+export const KNOWN_TIMELINE_KEYS: ReadonlySet<string> = new Set([
+  'date',
+  'cityId',
+  'city',
+  'note',
 ])
 
 // --- Authoring (what the LLM should aim for) -------------------------------
@@ -168,6 +185,15 @@ export const AuthoringCitySchema = z.object({
   coverImage: z.string().optional(),
 })
 
+export const AuthoringTimelineDaySchema = z.object({
+  date: z
+    .string()
+    .regex(/^\d{4}-\d{2}-\d{2}$/, 'date must be ISO, e.g. "2026-09-12"')
+    .describe('ISO date. One entry per day of the trip. The weekday is derived — never store it.'),
+  cityId: z.string().regex(kebab).describe('kebab-case id of a city in `cities`.'),
+  note: z.string().optional().describe('Optional one-liner for the day — a flight, a booking, a plan.'),
+})
+
 export const AuthoringDatasetSchema = z
   .object({
     $schema: z.string().optional(),
@@ -179,6 +205,10 @@ export const AuthoringDatasetSchema = z
       .optional(),
     cities: z.array(AuthoringCitySchema),
     tiktoks: z.array(AuthoringTikTokSchema),
+    timeline: z
+      .array(AuthoringTimelineDaySchema)
+      .optional()
+      .describe('The trip, one entry per day. Optional — an empty plan is a valid state.'),
   })
   .describe('China 2026 — TikTok command center dataset.')
 
@@ -223,6 +253,13 @@ export interface TikTok {
   searchText: string
 }
 
+export interface TimelineDay {
+  /** ISO `YYYY-MM-DD`. The weekday is always derived from this, never stored. */
+  date: string
+  cityId: string
+  note: string
+}
+
 export interface City {
   id: string
   name: string
@@ -248,5 +285,7 @@ export interface Dataset {
   updatedAt: string | null
   tiktoks: TikTok[]
   cities: City[]
+  /** Sorted by date. Empty when no trip has been planned yet. */
+  timeline: TimelineDay[]
   issues: DataIssue[]
 }

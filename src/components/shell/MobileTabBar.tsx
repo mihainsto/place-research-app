@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-import { LayoutGrid, Search, Waypoints } from 'lucide-react'
+import { CalendarDays, LayoutGrid, Search, Waypoints } from 'lucide-react'
 import { cn } from '@/lib/cn'
 
 /**
@@ -12,8 +12,9 @@ import { cn } from '@/lib/cn'
 export function MobileTabBar({ onSearch }: { onSearch: () => void }) {
   return (
     <nav className="fixed inset-x-0 bottom-0 z-30 border-t border-hairline bg-canvas/95 pb-[var(--safe-b)] backdrop-blur-xl md:hidden">
-      <div className="mx-auto grid max-w-md grid-cols-3">
+      <div className="mx-auto grid max-w-md grid-cols-4">
         <Tab to="/" end label="Wall" icon={<LayoutGrid aria-hidden className="size-[21px]" strokeWidth={1.75} />} />
+        <Tab to="/timeline" label="Trip" icon={<CalendarDays aria-hidden className="size-[21px]" strokeWidth={1.75} />} />
         <Tab to="/graph" label="Graph" icon={<Waypoints aria-hidden className="size-[21px]" strokeWidth={1.75} />} />
         <button
           type="button"

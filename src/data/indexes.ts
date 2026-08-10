@@ -11,6 +11,8 @@ export interface DataIndex {
   cityById: Map<string, City>
   /** Categories actually present in the data, alphabetical. */
   categories: string[]
+  /** How many days of the trip land in each city. Empty when unplanned. */
+  daysByCity: Map<string, number>
   counts: {
     byCity: Map<string, number>
     byCategory: Map<string, number>
@@ -55,11 +57,17 @@ export function buildIndex(dataset: Dataset): DataIndex {
     byPriority,
   }
 
+  const daysByCity = new Map<string, number>()
+  for (const day of dataset.timeline) {
+    daysByCity.set(day.cityId, (daysByCity.get(day.cityId) ?? 0) + 1)
+  }
+
   return {
     byId,
     byCity,
     cityById,
     categories: [...byCategory.keys()].sort((a, b) => a.localeCompare(b)),
+    daysByCity,
     counts,
   }
 }

@@ -94,6 +94,29 @@ Headings render as small quiet labels, so use them freely as structure. The
 script is read on a phone while standing at the location — write it to be
 scanned, not admired.
 
+## The timeline
+
+The trip itself, one entry per day, at the top level next to `tiktoks`:
+
+```json
+"timeline": [
+  { "date": "2026-09-12", "cityId": "shenzhen" },
+  { "date": "2026-09-13", "cityId": "changsha", "note": "early train" }
+]
+```
+
+| Field | Required | Rules |
+|---|---|---|
+| `date` | yes | ISO `YYYY-MM-DD`. One entry per day. **Never store the weekday** — the app derives it, and a stored one would eventually contradict the date. |
+| `cityId` | yes | kebab-case id of a city in `cities`. Add the city if it's new. |
+| `note` | no | One line — a flight, a booking, a plan for that day. |
+
+Keep it sorted by date (the app sorts anyway). Duplicate dates are ignored with
+a warning. The whole array is optional; no trip planned is a valid state.
+
+The Timeline page joins this to the board automatically: each city's TikToks
+become that leg's shot list, so you never list TikToks here.
+
 ## Rules
 
 1. **Never change an existing `id`.** Rewrite the title freely; the id is permanent.

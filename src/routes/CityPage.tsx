@@ -3,13 +3,21 @@ import { Link, useParams } from 'react-router-dom'
 import { useCity, useData } from '@/data/DataContext'
 import { STATUSES, STATUS_COLOR } from '@/lib/constants'
 import { sortTikToks } from '@/lib/filters'
+import { formatSpan } from '@/lib/timeline'
 import { WallGrid } from '@/components/wall/WallGrid'
 import { EmptyState } from '@/components/ui/EmptyState'
 
 export function CityPage() {
   const { cityId } = useParams()
-  const { index } = useData()
+  const { dataset, index } = useData()
   const city = useCity(cityId)
+
+  // Cross-link to the trip: how many days land here, and when.
+  const scheduled = useMemo(() => {
+    const days = dataset.timeline.filter((d) => d.cityId === cityId)
+    if (days.length === 0) return null
+    return { days: days.length, span: formatSpan(days[0].date, days[days.length - 1].date) }
+  }, [dataset.timeline, cityId])
 
   const tiktoks = useMemo(() => {
     const list = cityId ? (index.byCity.get(cityId) ?? []) : []
@@ -67,6 +75,15 @@ export function CityPage() {
             </span>
           ))}
         </div>
+
+        {scheduled ? (
+          <p className="mt-3 text-[13px] leading-[18px] text-ink-2">
+            <Link to="/timeline" className="underline decoration-hairline-strong underline-offset-2 transition-colors hover:decoration-ink-2">
+              {scheduled.days} day{scheduled.days === 1 ? '' : 's'} scheduled
+            </Link>
+            <span className="text-ink-3"> · {scheduled.span}</span>
+          </p>
+        ) : null}
 
         <div className="mt-6 flex flex-wrap gap-2.5">
           <Link

@@ -42,6 +42,7 @@ The LLM doesn't have to get these right, because `normalize.ts` derives them:
 | `coverImage` relative path | Prefixed with `/` so `/public` files work |
 | unknown `status` / `priority` | Falls back to `Idea` / `Maybe` + warning |
 | `city: "Chongqing"` instead of `cityId` | Accepted and slugified |
+| timeline weekday | Derived from the date, never stored |
 
 ## The one rule: never drop a TikTok silently
 

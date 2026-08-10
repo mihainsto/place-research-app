@@ -61,7 +61,10 @@ const warnings = normalized.issues.filter((i) => i.level === 'warning')
 console.log(
   `  ${bold(String(normalized.tiktoks.length))} TikToks · ` +
     `${bold(String(normalized.cities.length))} cities · ` +
-    `${bold(String(normalized.tiktoks.reduce((n, t) => n + t.references.length, 0)))} references`,
+    `${bold(String(normalized.tiktoks.reduce((n, t) => n + t.references.length, 0)))} references` +
+    (normalized.timeline.length
+      ? ` · ${bold(String(normalized.timeline.length))} days planned`
+      : ''),
 )
 
 // --- 2. Is it up to authoring standard? ------------------------------------
@@ -108,6 +111,24 @@ for (const t of missingScripts) {
   console.log(
     yellow(`\n  ! "${t.title}" is ${t.status} but has no script — that is the one thing you need on location.`),
   )
+}
+
+// A city you have material for but no days in is a planning gap, not a data
+// error — worth saying out loud, not worth failing on.
+if (normalized.timeline.length) {
+  const scheduled = new Set(normalized.timeline.map((d) => d.cityId))
+  const counts = new Map<string, number>()
+  for (const t of normalized.tiktoks) counts.set(t.cityId, (counts.get(t.cityId) ?? 0) + 1)
+
+  for (const city of normalized.cities) {
+    const n = counts.get(city.id) ?? 0
+    if (n > 0 && !scheduled.has(city.id)) {
+      console.log(yellow(`\n  ! ${n} TikTok${n === 1 ? '' : 's'} in ${city.name}, but no days scheduled there.`))
+    }
+    if (n === 0 && scheduled.has(city.id)) {
+      console.log(dim(`\n  · Days scheduled in ${city.name} but nothing on the board there yet.`))
+    }
+  }
 }
 
 if (crossErrors.length) {

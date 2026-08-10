@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { DataProvider, useDataStatus } from '@/data/DataContext'
 import { AppShell } from '@/components/shell/AppShell'
 import { WallPage } from '@/routes/WallPage'
+import { TimelinePage } from '@/routes/TimelinePage'
 import { CityPage } from '@/routes/CityPage'
 import { NotFound } from '@/routes/NotFound'
 
@@ -35,6 +36,7 @@ export default function App() {
                   </Suspense>
                 }
               />
+              <Route path="/timeline" element={<TimelinePage />} />
               <Route path="/city/:cityId" element={<CityPage />} />
               <Route
                 path="/graph"

@@ -52,7 +52,7 @@ downloading any image, and leaves a field blank rather than guessing.
 3. `npm run validate`
 4. Commit. That's the deploy.
 
-## The three views
+## The views
 
 **Wall** (`/`) — the home view. A uniform grid of covers: title, priority,
 category. Status is the 2px hairline along the bottom of each cover.
@@ -64,6 +64,12 @@ including script text.
 **TikTok** (`/t/:id`) — cover, title, location, references, script. Nothing behind
 a tab or a "read more". The script gets large type, generous leading and a text
 size control, and the screen is kept awake while it's open.
+
+**Timeline** (`/timeline`) — the trip as a shooting schedule. Consecutive days in
+one city group into a leg, and each leg carries that city's TikToks as its shot
+list, so you never list TikToks in the timeline data. It also surfaces the two
+things a calendar can't: cities you have material for but no days in, and days
+in a city with nothing on the board yet.
 
 **Graph** (`/graph`) — the network: project → cities → TikToks → references.
 TikTok nodes are their own cover images. Click a city and its constellation

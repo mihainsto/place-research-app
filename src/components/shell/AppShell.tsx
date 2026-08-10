@@ -11,7 +11,8 @@ export function AppShell({ children }: { children: ReactNode }) {
   const { dataset } = useData()
 
   // The detail page and the graph bring their own top chrome.
-  const showMobileTopBar = pathname === '/' || pathname.startsWith('/city/')
+  const showMobileTopBar =
+    pathname === '/' || pathname.startsWith('/city/') || pathname.startsWith('/timeline')
 
   return (
     <div className="min-h-dvh">

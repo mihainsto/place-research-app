@@ -32,6 +32,9 @@ export function Sidebar() {
           Wall
         </NavItem>
         <NavItem to="/graph">Graph</NavItem>
+        <NavItem to="/timeline" count={dataset.timeline.length || undefined}>
+          Timeline
+        </NavItem>
 
         {cities.length > 0 ? (
           <>

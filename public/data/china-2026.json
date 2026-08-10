@@ -10,7 +10,8 @@
     { "id": "shenzhen", "name": "Shenzhen", "region": "South" },
     { "id": "changsha", "name": "Changsha", "region": "Central" },
     { "id": "guiyang", "name": "Guiyang", "region": "Southwest" },
-    { "id": "chengdu", "name": "Chengdu", "region": "Southwest" }
+    { "id": "chengdu", "name": "Chengdu", "region": "Southwest" },
+    { "id": "yaan", "name": "Ya'an", "region": "Southwest" }
   ],
 
   "tiktoks": [
@@ -404,5 +405,17 @@
       ],
       "script": "## Shoot it in the rain\n\nThe photo on this card is wet flagstones, dripping eaves and lit lanterns — and that is the version worth having. Grey and raining is the look here, not blue sky. Chengdu obliges more often than not.\n\n## Practical\n\n- **Metro Line 4 to Caotang Road North 草堂北路站**, then ~15 min / 1km walk. 37 Qinghua Road, Qingyang District.\n- **Hours** 08:00–20:00 in summer, 08:00–18:30 in winter — sources put the changeover at either end of October. Ticket office shuts an hour before the gate.\n- **¥50–60** depending on which source you believe.\n- Allow **2.5–3 hours** for the whole site; far less if you're only after two or three shots.\n\n## What's actually photogenic\n\n- **The Flower Path 花径** — the corridor of red walls with bamboo shadows thrown across them. This is the shot the place is known for.\n- **Bamboo groves** through the gardens.\n- **The thatched hut replica**, with the little bridge over the stream.\n\nBest months are March–April for blossom and September–October for clear air.\n\n## Open questions\n\n- Whether the red-wall corridor gets queues for photos, and how early you'd need to be\n- Whether tripods are allowed inside\n- Whether it's worth pairing with anything nearby to justify the trip out west"
     }
+  ],
+
+  "timeline": [
+    { "date": "2026-09-12", "cityId": "shenzhen" },
+    { "date": "2026-09-13", "cityId": "changsha" },
+    { "date": "2026-09-14", "cityId": "guiyang" },
+    { "date": "2026-09-15", "cityId": "chengdu" },
+    { "date": "2026-09-16", "cityId": "yaan" },
+    { "date": "2026-09-17", "cityId": "chengdu" },
+    { "date": "2026-09-18", "cityId": "chongqing" },
+    { "date": "2026-09-19", "cityId": "chongqing" },
+    { "date": "2026-09-20", "cityId": "chongqing" }
   ]
 }

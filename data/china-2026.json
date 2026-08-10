@@ -8,7 +8,8 @@
   "cities": [
     { "id": "chongqing", "name": "Chongqing", "region": "Southwest" },
     { "id": "shenzhen", "name": "Shenzhen", "region": "South" },
-    { "id": "changsha", "name": "Changsha", "region": "Central" }
+    { "id": "changsha", "name": "Changsha", "region": "Central" },
+    { "id": "guiyang", "name": "Guiyang", "region": "Southwest" }
   ],
 
   "tiktoks": [
@@ -297,6 +298,46 @@
         }
       ],
       "script": "## The catch: the square needs a booking\n\nWatching from **Civic Center Square itself requires a free reservation**, through the 福田中心区夜景灯光预约导引服务 WeChat mini-program. Turning up without one is the way this goes wrong.\n\n**No booking is needed from nearby vantage points** — Lianhua Hill 莲花山 is the usual one, about a 10-minute climb, and it's the better frame anyway: the whole CBD skyline with Ping An behind it rather than the towers looming over you.\n\nSo: book if you want the square and the LED floor tiles in shot. Skip the booking and climb the hill if you want the skyline.\n\n## When\n\n- **Fridays and Saturdays**, plus the day before and during Chinese public holidays — New Year, Spring Festival, Labour Day, Dragon Boat, Mid-Autumn, National Day.\n- **Nov–Mar:** 19:00, 20:00, 21:00. **Apr–Oct:** 19:30, 20:30, 21:30.\n- Each show runs **15 minutes**.\n- Metro Line 2 or 4 to Civic Center Station, Exit B or F.\n\n## Shooting notes\n\n- Record video, not stills — the animation is the point.\n- Tripod worth having; it's a long, dark, wide subject.\n- Best reflections come right after rain, off the square.\n- For the square, get there well before the show to hold a spot.\n\n## Open questions\n\n- Whether the reservation is bookable by a foreign passport / non-Chinese WeChat, or needs a local\n- How far ahead the slots go and whether they sell out\n- Which of the three nightly shows is least crowded"
+    },
+    {
+      "id": "guiyang-white-house",
+      "title": "The White House Copy",
+      "cityId": "guiyang",
+      "status": "Idea",
+      "priority": "Good",
+      "category": "Weird China",
+      "coverImage": "/covers/guiyang-white-house.jpg",
+      "location": {
+        "name": "Huaguoyuan White House 花果园白宫, 99 Huaguoyuan Street, Nanming District",
+        "amapUrl": "https://uri.amap.com/search?keyword=%E8%8A%B1%E6%9E%9C%E5%9B%AD%E7%99%BD%E5%AE%AB"
+      },
+      "references": [
+        {
+          "title": "Guiyang White House — access, viewing angles, getting there",
+          "url": "https://www.travelofchina.com/guiyang-white-house/"
+        }
+      ],
+      "script": "## Exterior only\n\n**No public entry.** Routine access to the main building isn't permitted and staff patrol the perimeter. The ground floor occasionally hosts exhibitions, but it isn't a visitor venue. The facade and the reflecting pond *are* the attraction — free, no ticket.\n\nOfficially it's the **Boyang Art International Exchange Center 博样艺术国际交流中心**; everyone calls it 花果园白宫, the Huaguoyuan White House. Roughly 12 storeys, reportedly ¥2.7bn to build, and the landmark of the Huaguoyuan district.\n\nWorth noting for the script: it doesn't look much like the actual White House up close — it's closer to a vast French château with Roman columns and domes. The nickname does a lot of work.\n\n## Where and when\n\n- 99 Huaguoyuan Street, Nanming District — Songhua South Road, opposite Huaguoyuan Wetland Park and the Huaguoyuan Shopping Center.\n- **Huaguoyuan metro station**, 5–10 min walk. Taxi from Guiyang railway station 15–25 min, from the airport 40–60 min.\n- **Late afternoon into the first hour after sunset** is the light.\n\n## Angles\n\n- **Across the pond** — the reflection shot, the signature one.\n- **The eastern walkway** — shows how deep the building actually goes.\n- The photo here is from above, so somebody is getting an elevated angle — worth finding what building or hillside that's from.\n\n## Open questions\n\n- Where that aerial-ish angle is shot from, and whether it's a public vantage point\n- Whether drones are tolerated here, given the perimeter patrols\n- Whether the ground-floor exhibitions run on any predictable schedule\n- Whether Guiyang is worth a fourth city for one building, or whether it pairs with something else in Guizhou"
+    },
+    {
+      "id": "qianchun-interchange",
+      "title": "Qianchun Interchange",
+      "cityId": "guiyang",
+      "status": "Idea",
+      "priority": "Maybe",
+      "category": "Weird China",
+      "coverImage": "/covers/qianchun-interchange.jpg",
+      "location": {
+        "name": "Qianchun Interchange 黔春立交, Beijing West Road, Yunyan District",
+        "amapUrl": "https://uri.amap.com/search?keyword=%E9%BB%94%E6%98%A5%E7%AB%8B%E4%BA%A4"
+      },
+      "references": [
+        {
+          "title": "Aerial view and the numbers behind it",
+          "url": "https://www.globaltimes.cn/page/202302/1286276.shtml"
+        }
+      ],
+      "script": "## The numbers\n\n**Five levels, 11 ramps, 8 entrances and exits, and a 55m vertical drop** between top and bottom. Opened 2017 after eight-plus years of design and construction. Routinely called the most complex interchange in China.\n\nIt sits on Beijing West Road in Yunyan District, between the Qianchun and Haimahong tunnels, linking Huaguoyuan with Guanshanhu.\n\n## The problem: it only reads from the air\n\nEvery shot that made this famous — including the one on this card — is aerial. From the ground it's just an underpass; the five stacked levels and the whole roller-coaster geometry disappear. **That's the thing to solve before committing to it.**\n\nOptions, in order of how likely they are to work:\n\n1. **A high floor with a line of sight** — Guiyang is hilly and dense, so there may be a tower or hillside overlooking it. Worth scouting on a map before going.\n2. **A drone.** Which is the honest answer for what's on this card, and also the part with the most unknowns — see below.\n3. **From inside a car**, driving the ramps. A different video, but a real one: five levels, 55m of drop, and the drive itself is the story.\n\n## Pairs with the White House\n\nBoth are in Guiyang and the interchange connects to **Huaguoyuan** — the same district as [the White House copy]. Two subjects in one city changes the maths on whether Guiyang is worth the detour.\n\n## Open questions\n\n- Whether flying a drone here is permitted, what registration a foreign visitor needs, and whether this counts as restricted airspace. **Resolve this before planning around the aerial shot.**\n- Whether any public building or hillside gives an elevated line of sight\n- Whether the night lighting runs all evening\n- Whether the in-car version is actually interesting or just a tunnel"
     }
   ]
 }

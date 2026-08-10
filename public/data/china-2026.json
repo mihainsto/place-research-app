@@ -9,7 +9,8 @@
     { "id": "chongqing", "name": "Chongqing", "region": "Southwest" },
     { "id": "shenzhen", "name": "Shenzhen", "region": "South" },
     { "id": "changsha", "name": "Changsha", "region": "Central" },
-    { "id": "guiyang", "name": "Guiyang", "region": "Southwest" }
+    { "id": "guiyang", "name": "Guiyang", "region": "Southwest" },
+    { "id": "chengdu", "name": "Chengdu", "region": "Southwest" }
   ],
 
   "tiktoks": [
@@ -338,6 +339,50 @@
         }
       ],
       "script": "## The numbers\n\n**Five levels, 11 ramps, 8 entrances and exits, and a 55m vertical drop** between top and bottom. Opened 2017 after eight-plus years of design and construction. Routinely called the most complex interchange in China.\n\nIt sits on Beijing West Road in Yunyan District, between the Qianchun and Haimahong tunnels, linking Huaguoyuan with Guanshanhu.\n\n## The problem: it only reads from the air\n\nEvery shot that made this famous — including the one on this card — is aerial. From the ground it's just an underpass; the five stacked levels and the whole roller-coaster geometry disappear. **That's the thing to solve before committing to it.**\n\nOptions, in order of how likely they are to work:\n\n1. **A high floor with a line of sight** — Guiyang is hilly and dense, so there may be a tower or hillside overlooking it. Worth scouting on a map before going.\n2. **A drone.** Which is the honest answer for what's on this card, and also the part with the most unknowns — see below.\n3. **From inside a car**, driving the ramps. A different video, but a real one: five levels, 55m of drop, and the drive itself is the story.\n\n## Pairs with the White House\n\nBoth are in Guiyang and the interchange connects to **Huaguoyuan** — the same district as [the White House copy]. Two subjects in one city changes the maths on whether Guiyang is worth the detour.\n\n## Open questions\n\n- Whether flying a drone here is permitted, what registration a foreign visitor needs, and whether this counts as restricted airspace. **Resolve this before planning around the aerial shot.**\n- Whether any public building or hillside gives an elevated line of sight\n- Whether the night lighting runs all evening\n- Whether the in-car version is actually interesting or just a tunnel"
+    },
+    {
+      "id": "panda-valley",
+      "title": "Panda Valley",
+      "cityId": "chengdu",
+      "status": "Idea",
+      "priority": "Must Film",
+      "category": "Hidden Gem",
+      "coverImage": "/covers/panda-valley.jpg",
+      "location": {
+        "name": "Panda Valley 熊猫谷, Yutang Town, Dujiangyan",
+        "amapUrl": "https://uri.amap.com/search?keyword=%E7%86%8A%E7%8C%AB%E8%B0%B7"
+      },
+      "references": [
+        {
+          "title": "The TikTok — has more references in it",
+          "url": "https://www.tiktok.com/@rachandsteve/video/7643795168147115271"
+        },
+        {
+          "title": "Panda Valley vs the other bases — booking, transport, timings",
+          "url": "https://travelchinawith.me/giant-panda/dujiangyan-panda-base-vs-panda-valley/"
+        }
+      ],
+      "script": "## Book before you go — there is no ticket window\n\n**¥55, advance booking only**, through WeChat or the official site. No walk-up. This is the one that would waste a whole morning.\n\n## Which panda place this actually is\n\nThree sites get muddled constantly, so:\n\n- **Panda Valley 熊猫谷** — this one. The Chengdu base's field station, 134 hectares of forested hillside in Yutang Town, ~3km outside Dujiangyan. Naturalistic open enclosures and a free-roaming red panda path. Quiet.\n- **Chengdu Panda Base** (city) — the famous one, Hua Hua, tens of thousands of visitors a day. Closer to a theme park than a reserve.\n- **Dujiangyan Panda Base** — a *different* facility again, and **temporarily closed for renovation since 23 April 2026**. Don't let a search result send you there.\n\nThe reason to pick this one for a video is exactly the reason it's less famous: woodland, few people, pandas at a distance you can actually frame. The photo is bamboo and leaf litter, not concrete.\n\n## Getting there and when\n\n- Metro Line 6 to **Xibu Station** → intercity train to **Liduiyuan Station** (~40 min, ¥10) → Bus 14 or a short taxi. Or DiDi door-to-door, 60–80 min, ¥120–180.\n- **Active window is roughly 08:30–10:30.** Sources disagree on exactly when keepers arrive — one says 08:30, another 09:30 — but they agree the morning is when the pandas move. Be there for opening.\n- Hours: 07:30–18:00 from 16 Mar to 31 Oct, 08:00–17:30 otherwise.\n- Allow 2–4 hours.\n\n## Open questions\n\n- **What else the TikTok recommends** — it's JS-rendered so I couldn't read it. Worth watching it yourself and pulling the other spots out into their own entries.\n- Whether the booking works on a foreign passport and a non-Chinese WeChat, or needs a local\n- How far ahead slots go and whether they sell out\n- Whether tripods are allowed, and how close the enclosures actually let you get"
+    },
+    {
+      "id": "chengdu-twin-towers",
+      "title": "Chengdu Twin Towers",
+      "cityId": "chengdu",
+      "status": "Idea",
+      "priority": "Must Film",
+      "category": "Urban",
+      "coverImage": "/covers/chengdu-twin-towers.jpg",
+      "location": {
+        "name": "Jiaozi Ring Bridge 交子之环, Jiaozi Financial District",
+        "amapUrl": "https://uri.amap.com/search?keyword=%E4%BA%A4%E5%AD%90%E4%B9%8B%E7%8E%AF"
+      },
+      "references": [
+        {
+          "title": "Light show schedule and the best viewpoints",
+          "url": "https://www.intotravelchina.com/en/articles/1778046607078877621.html"
+        }
+      ],
+      "script": "## Free, nightly, no booking\n\nUnlike the Shenzhen Civic Center show, this one needs **no reservation and costs nothing**. It runs **every night, 19:30–22:00**, and the themed scenes change roughly every half hour — so if you miss one, wait ten minutes.\n\n## Where to stand\n\nThe location on this card is the **viewing spot, not the towers** — same logic as Liziba.\n\n- **Jiaozi Ring Bridge 交子之环** — the futuristic orange pedestrian loop. Unobstructed, front-row, dead-on view of both facades. **Be there by 19:20** for a place at the railing; it fills up on holidays.\n- **Jiaozi Park** — 10 minutes' walk, and the lake gives you the reflection version. Quieter.\n- **SKP entrance plaza** — the third usual angle.\n\n## Timing\n\n- **Blue hour is the shot.** About half an hour after sunset, the sky still deep blue against the LEDs — far better than full black.\n- If you miss it, **20:00–21:00** is when the sky is dark enough for the LEDs to punch.\n- Arrive ~10 min before a scene change.\n\n## Open questions\n\n- Whether the ring bridge is wide enough to set up a tripod without blocking people\n- Whether the content rotates nightly or repeats the same scenes\n- Whether the park reflection needs still water, i.e. a windless evening\n- Whether the towers themselves have any public observation level"
     }
   ]
 }

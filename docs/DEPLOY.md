@@ -57,8 +57,25 @@ Pages takes a minute or two. Then check, in this order:
 3. The Graph renders nodes with cover images → the canvas image cache resolved
    the base too.
 
-A stale service worker will serve you the previous build and hide all three.
-In DevTools: Application → Service Workers → Unregister, then hard reload.
+### The stale service worker
+
+The worker from the previous deploy will happily keep serving the previous
+build, which hides all three checks above. Worse, if the deploy *added* a route,
+that route renders "Nothing here" in the old build — it looks broken rather than
+out of date. This is how the Timeline page first appeared to fail.
+
+It's handled now: `skipWaiting` + `clientsClaim` make the new worker take over
+immediately, and `src/main.tsx` reloads once when it does (guarded so a
+first-ever visit never reloads). If you ever suspect it anyway, check which
+bundle is live:
+
+```js
+document.querySelector('script[type=module]').src
+```
+
+Compare the hash against `dist/index.html`. If they differ, the old worker is
+still in charge — DevTools → Application → Service Workers → Unregister, then
+hard reload.
 
 ## It's a public site
 

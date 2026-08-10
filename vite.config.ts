@@ -48,6 +48,12 @@ export default defineConfig(({ mode }) => {
           // TikTok you hadn't opened before losing signal would have no image.
           globPatterns: ['**/*.{js,css,html,svg,woff2,jpg,png}'],
           maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
+          // Take over as soon as the new worker installs. Without this the old
+          // worker keeps serving the previous build, and a deploy that adds a
+          // route makes that route 404 in the app — which reads as broken
+          // rather than stale. Paired with the reload in main.tsx.
+          skipWaiting: true,
+          clientsClaim: true,
           navigateFallback: `${base}index.html`,
           runtimeCaching: [
             {

@@ -661,6 +661,30 @@
         }
       ],
       "script": "## The visual difference from the other Chongqing viewpoints\n\nEvery other skyline entry on this board puts you inside the city, surrounded by it. This one puts you **across the river, looking back** at the whole thing — Yuzhong Peninsula, Hongya Cave, Qiansimen and Chaotianmen bridges, the two rivers/four banks, all as one compressed skyline rather than a 360° \"I'm in the middle of it\" shot. Independently confirmed: the \"Chongqing's Manhattan\" framing, the 360° river-facing design, and that it faces Hongyadong directly across the water.\n\n## What it actually is\n\nThe Diamond Plaza at the **Chongqing Financial Convention & Exhibition Center**, Jiangbeizui CBD — not a generic mall. Three faceted \"diamond\" structures scattered along the Jialing riverside, glass facades cut to catch and refract light, a rooftop terrace shaped like phoenix tail feathers. Former site of Juxianyan Plaza.\n\n## Practical\n\n- **Free, open all day.** 1–2 hours.\n- Metro Line 6, Grand Theatre Station Exit 5, ~10 min walk.\n- Metro Line 9, Liujiatai Station Exit 4, ~8 min walk, or Jiangbeicheng Station, ~10 min walk.\n- Driving: navigate to \"Diamond Plaza\" or \"Chongqing Financial Exhibition Center.\" Parking is reportedly difficult — public transit recommended.\n- A separate source gives Line 6 to **Dayuyuan Station**, ~15 min walk, as another route in — worth having as a backup if the closer exits are inconvenient.\n\n## The train shot\n\nOne report describes a spot where **Metro Line 2 passes directly beside the glass façade**, close enough to frame as if you're pushing or controlling the train as it goes by. Couldn't independently confirm this one — specific enough that it's worth scouting on arrival rather than assuming it's still there.\n\n## Shooting plan\n\nBlue hour → sunset → full night, to get the skyline transforming progressively rather than one static look. A 200–600mm becomes genuinely useful here if the air is clear — this is a compression shot, not a wide establishing one.\n\n## Open questions\n\n- Exactly where the Metro Line 2 vantage point is, and whether it's easily found\n- How crowded the plaza gets at peak blue-hour/sunset times\n- Whether the rooftop terrace itself is accessible or the shot is all from ground level"
+    },
+    {
+      "id": "guanyinqiao-food-street",
+      "title": "Guanyinqiao Food Street",
+      "cityId": "chongqing",
+      "status": "Idea",
+      "priority": "Maybe",
+      "category": "Food",
+      "coverImage": "/covers/guanyinqiao-food-street.jpg",
+      "location": {
+        "name": "观音桥好吃街 Guanyinqiao Food Street, Jiangbei District",
+        "amapUrl": "https://uri.amap.com/search?keyword=%E8%A7%82%E9%9F%B3%E6%A1%A5%E5%A5%BD%E5%90%83%E8%A1%97"
+      },
+      "references": [
+        {
+          "title": "Reel",
+          "url": "https://www.instagram.com/reel/DZaUk9Mzf3_/"
+        },
+        {
+          "title": "The elevator-down layout, metro access, hours",
+          "url": "https://nihaochongqing.com/guanyinqiao-chongqing-where-locals-eat-hang-out/"
+        }
+      ],
+      "script": "## What it is\n\n**Guanyinqiao Food Street 观音桥好吃街** — the neon sign in the photo names it directly. Where locals actually go for everyday food and late-night snacks, not a tourist-facing strip. Spicy grilled skewers, Chongqing noodles, hotpot, handmade noodles.\n\n## The visual hook, beyond the food\n\nThe street has a genuinely Chongqing spatial trick: you take an **elevator down several floors** into the snack street, eat your way through, and come out the other end back at **ground level on a completely different street**. Worth filming as its own beat, not just cutaways of food.\n\n## Practical\n\n- **Jiangbei District.** Metro Line 3 or 9 to **Guanyinqiao Station, Exit 4.**\n- Most stalls open ~11:00, busy until 22:00+. **Evening is the better time to shoot** — busier, better lit.\n- WeChat Pay / Alipay expected; cash is rare here.\n\n## Your reel\n\nLinked as a reference, but it's JS-rendered and returned nothing to a fetch — same limitation hit on a couple of other Instagram links this session. Worth reviewing yourself for any specific stalls or angles it calls out.\n\n## Open questions\n\n- Which specific stalls are worth the shot, versus just wide walk-through footage\n- Whether the elevator-down entrance is easy to find or needs local knowledge\n- How the crowd density changes between an early evening and a late-night visit"
     }
   ],
 

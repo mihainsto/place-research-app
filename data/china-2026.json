@@ -725,6 +725,26 @@
         }
       ],
       "script": "## What the photo shows\n\nA play area — pool, tube slides, inflatable rides — built into the middle levels of a multi-storey parking garage, cars parked right up against it, ramps and parking bays visible on every side. On-brand for Chongqing's habit of solving space problems by stacking things vertically that have no obvious business sharing a building.\n\n## I could not confirm which one this is\n\nTwo searches turned up real things, neither of them this one:\n\n- One \"Chongqing parking garage amusement park\" write-up turned out to actually describe a venue in **Hangzhou**, not Chongqing — a genuine mix-up in that source, not something I'm inferring.\n- A second, \"underground parking play\" result was a real Chongqing facility (the Jiefangbei underground loop near Hongya Cave) but it's **just parking, 20,000+ spaces, no rides at all** — a different kind of place entirely.\n\nSo: no confirmed name, address, or district for the specific garage in this photo. Chongqing does have more than one of these hybrid parking/play structures, going by general coverage of the phenomenon, but I won't guess which building this is.\n\n## What to do with this\n\n**The reel is the actual location data for this entry.** Everything else can come from watching it back — which garage, which district, roughly what it costs to ride (other sources on the general phenomenon put individual rides at well under ¥15/$2, if that holds here too).\n\n## Open questions\n\n- Which parking structure this actually is, and its district\n- Whether it's a standing installation or a temporary pop-up\n- Cost per ride and whether there's a wristband/day-pass option\n- Opening hours — likely tied to the garage's own hours rather than a separate schedule"
+    },
+    {
+      "id": "walle-eva-restaurant",
+      "title": "WALL-E & EVA",
+      "cityId": "shenzhen",
+      "status": "Idea",
+      "priority": "Good",
+      "category": "WTF",
+      "coverImage": "/covers/walle-eva-restaurant.jpg",
+      "location": {
+        "name": "瓦力与伊娃 WALL-E & EVA, inside 全球首家机器人6S店, Galaxy WORLD 星河WORLD, Bantian, Longgang District",
+        "amapUrl": "https://www.amap.com/place/B0LRTRAL6P"
+      },
+      "references": [
+        {
+          "title": "Robot 6S Store — one-year anniversary, Longgang government",
+          "url": "https://www.lg.gov.cn/gab/zwdt/content/post_12916911.html"
+        }
+      ],
+      "script": "## What and where\n\n**WALL-E & EVA 瓦力与伊娃**, a human-robot collaborative restaurant, inside the **Robot 6S Store 全球首家机器人6S店** — the world's first of its kind — in **Galaxy WORLD 星河WORLD**, Bantian 坂田, Longgang District.\n\nAddress: 广东省深圳市龙岗区坂田街道雅星路星河WORLD. The 6S Store itself is more precisely pinned at the Yaxing Road / Yali Road junction, ~100m north, near **Yabao Station Exit B (Metro Line 10)**.\n\n**Search 全球首家机器人6S店 on Chinese maps, not the restaurant name** — the restaurant doesn't reliably appear as its own map listing. [Amap pin for the 6S Store](https://www.amap.com/place/B0LRTRAL6P).\n\n## What's independently confirmed vs. what isn't\n\nThe **Robot 6S Store itself** is solidly corroborated by multiple sources: Longgang District government, Xinhua, and others all confirm it opened in **Bantian's Galaxy WORLD in July 2025** — the \"6S\" being sales, spare parts, after-sales, feedback, rental and customization for robots, built around a one-kilometre \"robot street district\" concept.\n\n**The WALL-E & EVA restaurant specifically — its name, the May 2026 opening claim, \"full capacity,\" and the exact robot role breakdown (chef, greeter, dancer, server) — I could not independently confirm.** The Longgang government's own anniversary article (marking one year since the 6S Store opened) doesn't mention the restaurant by name; it only describes robot performances — street dance, tap dance, tai chi, a comedy routine. That's a different thing from a working restaurant. None of this means the restaurant isn't real — it plausibly is, and this research was done properly — but it's supplied information, not something I stood behind myself.\n\n## The sequence\n\nMetro → Galaxy WORLD establishing shot → walk to the 6S Store → robots outside → enter → cut between robot types → humanoid greeting → seated at WALL-E & EVA → robot takes the order → robot cooking → transport robot → server robot arrives → eating while robots work around you. A chapter, not a single shot.\n\nThe **Robot Theater**, ~11,200m², sits alongside the 6S Store as a larger embodied-AI exhibition/performance space — a second location in the same trip if the restaurant alone doesn't fill the sequence.\n\n## Open questions\n\n- Exact floor/unit of the restaurant inside the 6S Store — not found by either of us\n- Whether \"WALL-E & EVA\" is still operating, and whether it's still human-assisted or has moved toward the fully autonomous model the operators reportedly want\n- Whether filming is permitted inside — a place this new, with this much government attention, may have its own media policy"
     }
   ],
 

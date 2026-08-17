@@ -1,0 +1,4 @@
+interface:
+  display_name: "Update TikTok"
+  short_description: "Edit an existing TikTok entry"
+  default_prompt: "Use $update-tiktok to safely update an existing China 2026 TikTok without changing its permalink id."

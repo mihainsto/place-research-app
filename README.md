@@ -45,6 +45,19 @@ verbatim and never researched over.** Give it a full entry and it does no
 searching; give it four words and it fills in the rest. It asks before
 downloading any image, and leaves a field blank rather than guessing.
 
+### In Codex
+
+The same three skills live in `.codex/skills/`:
+
+| Skill | Use it for |
+|---|---|
+| **add-tiktok** | Add a new place or idea, with targeted research for missing fields |
+| **update-tiktok** | Change an existing entry without changing its permalink id |
+| **add-cover** | Convert a photo from `photos/` and attach it to an entry |
+
+Invoke them by name, for example `$add-tiktok`, or use the same plain-language
+requests shown above.
+
 ### By hand, or with any other LLM
 
 1. Give it [`docs/LLM_INSTRUCTIONS.md`](docs/LLM_INSTRUCTIONS.md).

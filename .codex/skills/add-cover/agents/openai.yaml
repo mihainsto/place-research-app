@@ -1,0 +1,4 @@
+interface:
+  display_name: "Add Cover"
+  short_description: "Attach or replace a TikTok cover photo"
+  default_prompt: "Use $add-cover to turn a source photo into a web-sized cover and wire it to the matching TikTok."

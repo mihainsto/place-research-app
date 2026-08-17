@@ -1,0 +1,4 @@
+interface:
+  display_name: "Add TikTok"
+  short_description: "Research and add a China 2026 TikTok"
+  default_prompt: "Use $add-tiktok to research missing details and add a new China 2026 TikTok entry."

@@ -750,13 +750,12 @@
 
   "timeline": [
     { "date": "2026-09-12", "cityId": "shenzhen" },
-    { "date": "2026-09-13", "cityId": "changsha" },
-    { "date": "2026-09-14", "cityId": "guiyang" },
-    { "date": "2026-09-15", "cityId": "chengdu" },
-    { "date": "2026-09-16", "cityId": "yaan" },
-    { "date": "2026-09-17", "cityId": "chengdu" },
+    { "date": "2026-09-13", "cityId": "changsha", "train": { "departure": "12:00", "durationMinutes": 180 } },
+    { "date": "2026-09-14", "cityId": "guiyang", "train": { "departure": "12:00", "durationMinutes": 180 } },
+    { "date": "2026-09-15", "cityId": "chengdu", "train": { "departure": "12:00", "durationMinutes": 180 } },
+    { "date": "2026-09-16", "cityId": "chengdu" },
+    { "date": "2026-09-17", "cityId": "chongqing", "train": { "departure": "12:00", "durationMinutes": 180 } },
     { "date": "2026-09-18", "cityId": "chongqing" },
-    { "date": "2026-09-19", "cityId": "chongqing" },
-    { "date": "2026-09-20", "cityId": "chongqing" }
+    { "date": "2026-09-19", "cityId": "chongqing" }
   ]
 }

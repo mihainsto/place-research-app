@@ -143,7 +143,7 @@
       "coverImage": "/covers/shenzhen-drone-delivery.jpg",
       "location": {
         "name": "Shenzhen Central Park 深圳中心公园, Futian District",
-        "amapUrl": "https://uri.amap.com/search?keyword=%E6%B7%B1%E5%9C%B3%E4%B8%AD%E5%BF%83%E5%85%AC%E5%9B%AD"
+        "amapUrl": "https://surl.amap.com/kr5VUvkr1wF"
       },
       "references": [
         {
@@ -167,7 +167,7 @@
       "coverImage": "/covers/shenzhen-cyberpunk-view.jpg",
       "location": {
         "name": "One Avenue 卓悦中心, Futian CBD",
-        "amapUrl": "https://uri.amap.com/search?keyword=%E5%8D%93%E6%82%A6%E4%B8%AD%E5%BF%83"
+        "amapUrl": "https://surl.amap.com/kmCkkV0I9Al"
       },
       "references": [
         {
@@ -251,7 +251,7 @@
       "coverImage": "/covers/orbit-one.jpg",
       "location": {
         "name": "Orbit One 奥彼文星球食研所, iN City Plaza, 1088 Shennan Middle Road, Futian",
-        "amapUrl": "https://uri.amap.com/search?keyword=%E5%A5%A5%E5%BD%BC%E6%96%87%E6%98%9F%E7%90%83%E9%A3%9F%E7%A0%94%E6%89%80"
+        "amapUrl": "https://surl.amap.com/VZbjC6hc2U."
       },
       "references": [
         {
@@ -271,7 +271,7 @@
       "coverImage": "/covers/dji-sky-city.jpg",
       "location": {
         "name": "DJI Sky City 大疆天空之城, 55 Xianyuan Road, Nanshan District",
-        "amapUrl": "https://uri.amap.com/search?keyword=%E5%A4%A7%E7%96%86%E5%A4%A9%E7%A9%BA%E4%B9%8B%E5%9F%8E"
+        "amapUrl": "https://surl.amap.com/1hzvduC14ePa"
       },
       "references": [
         {
@@ -291,7 +291,7 @@
       "coverImage": "/covers/civic-center-light-show.jpg",
       "location": {
         "name": "Civic Center Square 市民广场, Futian District",
-        "amapUrl": "https://uri.amap.com/search?keyword=%E6%B7%B1%E5%9C%B3%E5%B8%82%E6%B0%91%E4%B8%AD%E5%BF%83"
+        "amapUrl": "https://surl.amap.com/23c1vjYWf6S"
       },
       "references": [
         {
@@ -568,7 +568,7 @@
       "coverImage": "/covers/mo-bar-shenzhen.jpg",
       "location": {
         "name": "MO Bar, Mandarin Oriental Shenzhen, Block A UpperHills, 5001 Huanggang Road, Futian District",
-        "amapUrl": "https://uri.amap.com/search?keyword=%E6%B7%B1%E5%9C%B3%E6%96%87%E5%8D%8E%E4%B8%9C%E6%96%B9%E9%85%92%E5%BA%97"
+        "amapUrl": "https://surl.amap.com/kqRS0eq413K."
       },
       "references": [
         {
@@ -736,7 +736,7 @@
       "coverImage": "/covers/walle-eva-restaurant.jpg",
       "location": {
         "name": "瓦力与伊娃 WALL-E & EVA, inside 全球首家机器人6S店, Galaxy WORLD 星河WORLD, Bantian, Longgang District",
-        "amapUrl": "https://www.amap.com/place/B0LRTRAL6P"
+        "amapUrl": "https://surl.amap.com/j7H2S6SZ7GH"
       },
       "references": [
         {

@@ -64,6 +64,12 @@ export const RawTimelineDaySchema = z.object({
   /** Same tolerated alias as on a TikTok. */
   city: z.string().optional(),
   note: z.string().optional(),
+  train: z
+    .object({
+      departure: z.string().regex(/^(?:[01]\d|2[0-3]):[0-5]\d$/),
+      durationMinutes: z.number().int().positive(),
+    })
+    .optional(),
 })
 
 export const RawDatasetSchema = z.object({
@@ -112,6 +118,7 @@ export const KNOWN_TIMELINE_KEYS: ReadonlySet<string> = new Set([
   'cityId',
   'city',
   'note',
+  'train',
 ])
 
 // --- Authoring (what the LLM should aim for) -------------------------------
@@ -192,6 +199,20 @@ export const AuthoringTimelineDaySchema = z.object({
     .describe('ISO date. One entry per day of the trip. The weekday is derived — never store it.'),
   cityId: z.string().regex(kebab).describe('kebab-case id of a city in `cities`.'),
   note: z.string().optional().describe('Optional one-liner for the day — a flight, a booking, a plan.'),
+  train: z
+    .object({
+      departure: z
+        .string()
+        .regex(/^(?:[01]\d|2[0-3]):[0-5]\d$/)
+        .describe('Local departure time in 24-hour HH:MM format.'),
+      durationMinutes: z
+        .number()
+        .int()
+        .positive()
+        .describe('Expected train duration in minutes.'),
+    })
+    .optional()
+    .describe('Optional train travel block. The timeline calculates and displays the arrival time.'),
 })
 
 export const AuthoringDatasetSchema = z
@@ -258,6 +279,12 @@ export interface TimelineDay {
   date: string
   cityId: string
   note: string
+  train: TrainSchedule | null
+}
+
+export interface TrainSchedule {
+  departure: string
+  durationMinutes: number
 }
 
 export interface City {

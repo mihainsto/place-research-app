@@ -1,4 +1,4 @@
-import type { TimelineDay } from '@/data/schema'
+import type { TimelineDay, TrainSchedule } from '@/data/schema'
 
 /**
  * The trip, grouped.
@@ -49,6 +49,25 @@ export function dayOfMonth(iso: string): string {
 
 export function monthShort(iso: string): string {
   return utc(iso).toLocaleDateString('en-GB', { month: 'short', timeZone: 'UTC' })
+}
+
+export function formatTimeRange(train: TrainSchedule): string {
+  return `${train.departure}–${addMinutes(train.departure, train.durationMinutes)}`
+}
+
+export function formatDuration(minutes: number): string {
+  const hours = Math.floor(minutes / 60)
+  const remainder = minutes % 60
+  if (remainder === 0) return `${hours}h`
+  return `${hours}h ${remainder}m`
+}
+
+function addMinutes(time: string, durationMinutes: number): string {
+  const [hours, minutes] = time.split(':').map(Number)
+  const total = hours * 60 + minutes + durationMinutes
+  const endHours = Math.floor(total / 60) % 24
+  const endMinutes = total % 60
+  return `${String(endHours).padStart(2, '0')}:${String(endMinutes).padStart(2, '0')}`
 }
 
 /** "12–20 September 2026", or "12 September 2026" for a single day. */

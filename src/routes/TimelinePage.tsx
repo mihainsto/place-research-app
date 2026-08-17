@@ -1,9 +1,19 @@
 import { useMemo } from 'react'
 import { Link } from 'react-router-dom'
+import { TrainFront } from 'lucide-react'
 import { useData } from '@/data/DataContext'
 import type { TikTok } from '@/data/schema'
 import { PRIORITY_RANK, STATUS_COLOR } from '@/lib/constants'
-import { buildLegs, dayOfMonth, formatSpan, monthShort, weekday, type Leg } from '@/lib/timeline'
+import {
+  buildLegs,
+  dayOfMonth,
+  formatDuration,
+  formatSpan,
+  formatTimeRange,
+  monthShort,
+  weekday,
+  type Leg,
+} from '@/lib/timeline'
 import { CoverImage } from '@/components/ui/CoverImage'
 import { PriorityTag } from '@/components/ui/Tag'
 import { EmptyState } from '@/components/ui/EmptyState'
@@ -55,6 +65,7 @@ export function TimelinePage() {
   const mustFilmInReach = [...inReach].filter(
     (id) => index.byId.get(id)?.priority === 'Must Film',
   ).length
+  const trainDays = dataset.timeline.filter((day) => day.train).length
 
   return (
     // A single reading column: stretched full width the shot rows turn into a
@@ -73,6 +84,12 @@ export function TimelinePage() {
             {citiesVisited} cit{citiesVisited === 1 ? 'y' : 'ies'}
           </span>
           <span>{inReach.size} TikToks in reach</span>
+          {trainDays > 0 ? (
+            <span className="inline-flex items-center gap-1.5 text-accent-text">
+              <TrainFront aria-hidden className="size-3.5" strokeWidth={1.8} />
+              {trainDays} train day{trainDays === 1 ? '' : 's'}
+            </span>
+          ) : null}
           {mustFilmInReach > 0 ? (
             <span style={{ color: '#f0655a' }}>{mustFilmInReach} must film</span>
           ) : null}
@@ -121,6 +138,7 @@ function LegRow({ leg, last }: { leg: Leg; last: boolean }) {
   }, [index.byCity, leg.cityId])
 
   const mustFilm = tiktoks.filter((t) => t.priority === 'Must Film').length
+  const trainDays = leg.days.filter((day) => day.train)
   const notes = leg.days.filter((d) => d.note)
 
   return (
@@ -179,6 +197,14 @@ function LegRow({ leg, last }: { leg: Leg; last: boolean }) {
           </ul>
         ) : null}
 
+        {trainDays.length > 0 ? (
+          <div className="mt-4 flex flex-col gap-2">
+            {trainDays.map((day) => (
+              <TrainDayRow key={day.date} day={day} />
+            ))}
+          </div>
+        ) : null}
+
         {tiktoks.length === 0 ? (
           <p className="mt-4 text-[14px] leading-[20px] text-ink-3">
             Nothing on the board for {city?.name ?? leg.cityId} yet.
@@ -192,6 +218,32 @@ function LegRow({ leg, last }: { leg: Leg; last: boolean }) {
         )}
       </div>
     </li>
+  )
+}
+
+function TrainDayRow({ day }: { day: Leg['days'][number] }) {
+  if (!day.train) return null
+
+  return (
+    <div className="flex items-start gap-3 rounded-card border border-hairline bg-surface px-3 py-2.5">
+      <span className="mt-0.5 flex size-7 shrink-0 items-center justify-center rounded-[7px] bg-accent-dim text-accent-text">
+        <TrainFront aria-hidden className="size-4" strokeWidth={1.8} />
+      </span>
+      <div className="min-w-0">
+        <div className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
+          <p className="text-[14px] leading-[19px] font-medium text-ink">Train day</p>
+          <p className="text-[12px] leading-4 text-ink-3">
+            {weekday(day.date)} {dayOfMonth(day.date)} {monthShort(day.date)}
+          </p>
+        </div>
+        <p className="mt-0.5 text-[12px] leading-[17px] text-ink-2">
+          {formatTimeRange(day.train)}{' '}
+          <span className="text-ink-3">
+            · {formatDuration(day.train.durationMinutes)} travel · less filming time
+          </span>
+        </p>
+      </div>
+    </div>
   )
 }
 

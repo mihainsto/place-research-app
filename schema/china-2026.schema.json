@@ -204,6 +204,27 @@
           "note": {
             "description": "Optional one-liner for the day — a flight, a booking, a plan.",
             "type": "string"
+          },
+          "train": {
+            "description": "Optional train travel block. The timeline calculates and displays the arrival time.",
+            "type": "object",
+            "properties": {
+              "departure": {
+                "type": "string",
+                "pattern": "^(?:[01]\\d|2[0-3]):[0-5]\\d$",
+                "description": "Local departure time in 24-hour HH:MM format."
+              },
+              "durationMinutes": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991,
+                "description": "Expected train duration in minutes."
+              }
+            },
+            "required": [
+              "departure",
+              "durationMinutes"
+            ]
           }
         },
         "required": [

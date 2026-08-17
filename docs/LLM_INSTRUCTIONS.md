@@ -101,7 +101,11 @@ The trip itself, one entry per day, at the top level next to `tiktoks`:
 ```json
 "timeline": [
   { "date": "2026-09-12", "cityId": "shenzhen" },
-  { "date": "2026-09-13", "cityId": "changsha", "note": "early train" }
+  {
+    "date": "2026-09-13",
+    "cityId": "changsha",
+    "train": { "departure": "12:00", "durationMinutes": 180 }
+  }
 ]
 ```
 
@@ -110,6 +114,7 @@ The trip itself, one entry per day, at the top level next to `tiktoks`:
 | `date` | yes | ISO `YYYY-MM-DD`. One entry per day. **Never store the weekday** — the app derives it, and a stored one would eventually contradict the date. |
 | `cityId` | yes | kebab-case id of a city in `cities`. Add the city if it's new. |
 | `note` | no | One line — a flight, a booking, a plan for that day. |
+| `train` | no | Train travel for the day: local `departure` time (`HH:MM`) and `durationMinutes`. The app calculates the arrival time and marks the day as lower filming time. |
 
 Keep it sorted by date (the app sorts anyway). Duplicate dates are ignored with
 a warning. The whole array is optional; no trip planned is a valid state.

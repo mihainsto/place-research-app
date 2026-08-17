@@ -26,6 +26,7 @@
 
   /* --- Accent (cinnabar / China red) ------------------------------------- */
   --color-accent: #e0483d;
+  --color-accent-text: #f0655a;
   --color-accent-dim: rgba(224, 72, 61, 0.16);
   --color-accent-line: rgba(224, 72, 61, 0.45);
 
